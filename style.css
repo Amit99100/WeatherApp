@@ -3,16 +3,29 @@
     margin: 0px;
     /* box-sizing: border-box; */
     font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+#ribbon {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(51, 51, 138);
 }
 
 
 #main {
     width: 100%;
-    height: 100vh;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+
 }
 
 .row {
@@ -27,6 +40,8 @@
     /* border: 2px solid black; */
     margin: 10px 0px 20px;
     font-size: 1.3em;
+    margin: 20px;
+    border-radius: 5px;
 
 }
 
@@ -39,6 +54,33 @@
     border-radius: 25px;
     border: none;
     outline: none;
-    box-shadow: 0px 0px 8px rgb(58, 53, 53);
+    box-shadow: 0px 0px 8px rgb(75, 72, 72);
     width: 100%;
+
+}
+
+#section2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Temperature_div {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+@media (max-width:600px) {
+    #section2 {
+        flex-wrap: wrap;
+        /*Wrap is very important   */
+
+    }
+
+
 }
